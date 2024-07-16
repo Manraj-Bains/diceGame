@@ -1,0 +1,94 @@
+// Variables
+$primary-color: #4a148c;
+$secondary-color: #00796b;
+$hover-color: #004d40;
+$background-color: #e0e0e0;
+$text-color: #333;
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin button-styles {
+    background-color: $secondary-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+        background-color: $hover-color;
+        transform: scale(1.1);
+    }
+}
+
+body {
+    font-family: $font-stack;
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#game-board {
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.dice {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.2s;
+    animation: rollDice 0.5s ease-in-out;
+
+    @keyframes rollDice {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+}
+
+#scores {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    @include button-styles;
+}
+
+@media (max-width: 600px) {
+    #game-board {
+        width: 95%;
+        max-width: none;
+    }
+
+    header, button {
+        font-size: 24px;
+    }
+}

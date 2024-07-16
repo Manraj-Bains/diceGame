@@ -1,75 +1,64 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e0e0e0; 
-    color: #333;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0e0e0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center; }
 
 header {
-    background-color: #4a148c; 
-    color: white;
-    padding: 20px 0;
-    font-size: 28px;
-    font-weight: bold;
-}
+  background-color: #4a148c;
+  color: white;
+  padding: 20px 0;
+  font-size: 28px;
+  font-weight: bold; }
 
 #game-board {
-    margin: 30px auto;
-    padding: 20px;
-    background: #ffffff; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    border: 2px solid #ccc; 
-}
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 2px solid #ccc; }
 
 .dice {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: transform 0.2s;
-    animation: rollDice 0.5s ease-in-out; 
-}
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.2s;
+  animation: rollDice 0.5s ease-in-out; }
 
 @keyframes rollDice {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 #scores {
-    font-size: 20px;
-    margin-top: 20px;
-    font-weight: 500; 
-}
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 500; }
 
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #00796b; 
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-button:hover {
-    background-color: #004d40; 
-    transform: scale(1.1);
-}
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; }
+  button:hover {
+    background-color: #004d40;
+    transform: scale(1.1); }
 
 @media (max-width: 600px) {
-    #game-board {
-        width: 95%;
-        max-width: none;
-    }
-
-    header, button {
-        font-size: 24px;
-    }
-}
+  #game-board {
+    width: 95%;
+    max-width: none; }
+  header, button {
+    font-size: 24px; } }
