@@ -1,33 +1,29 @@
-/* General body styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e0e0e0; /* Soft gray background */
+    background-color: #e0e0e0; 
     color: #333;
     margin: 0;
     padding: 20px;
     text-align: center;
 }
 
-/* Header styles */
 header {
-    background-color: #4a148c; /* Deep purple */
+    background-color: #4a148c; 
     color: white;
     padding: 20px 0;
     font-size: 28px;
     font-weight: bold;
 }
 
-/* Game board styles */
 #game-board {
     margin: 30px auto;
     padding: 20px;
-    background: #ffffff; /* White background for the game board */
+    background: #ffffff; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    border: 2px solid #ccc; /* Light grey border, slightly updated to match */
+    border: 2px solid #ccc; 
 }
 
-/* Dice styles */
 .dice {
     width: 80px;
     height: 80px;
@@ -36,7 +32,7 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform 0.2s;
-    animation: rollDice 0.5s ease-in-out; /* Dice roll animation */
+    animation: rollDice 0.5s ease-in-out; 
 }
 
 @keyframes rollDice {
@@ -44,19 +40,17 @@ header {
     to { transform: rotate(360deg); }
 }
 
-/* Scoreboard styles */
 #scores {
     font-size: 20px;
     margin-top: 20px;
-    font-weight: 500; /* Added weight for better legibility */
+    font-weight: 500; 
 }
 
-/* Button styles */
 button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #00796b; /* Updated to a soothing teal */
+    background-color: #00796b; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -64,13 +58,11 @@ button {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Button hover effects */
 button:hover {
-    background-color: #004d40; /* Dark teal on hover */
+    background-color: #004d40; 
     transform: scale(1.1);
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 600px) {
     #game-board {
         width: 95%;
